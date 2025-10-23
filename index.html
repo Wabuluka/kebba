@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshSqueeze | Natural Juices</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://images.unsplash.com/photo-1613478223719-2ab802602423?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 150px 0;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .juice-card {
+        transition: transform 0.3s;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 300px;
+      }
+      .juice-card img {
+        height: 300px;
+      }
+
+      .juice-card:hover {
+        transform: translateY(-5px);
+      }
+      .section-title {
+        position: relative;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .section-title:after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: #28a745;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .about-img {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        /* width: 400px; */
+      }
+      .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 0;
+      }
+      .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 20px;
+      }
+      .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-lemon text-success"></i> FreshSqueeze
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Fresh & Natural Juices</h1>
+        <p class="lead">
+          Handcrafted with organic fruits and vegetables for maximum health
+          benefits
+        </p>
+        <a href="#menu" class="btn btn-success btn-lg mt-3">View Our Menu</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="./kebba.jpeg"
+              alt="Fresh juice preparation"
+              class="img-fluid about-img"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Our Story</h3>
+            <p>
+              At FreshSqueeze, we believe in the power of nature to nourish and
+              heal. Our journey began with a simple mission: to provide the
+              freshest, most nutritious juices made from locally sourced,
+              organic ingredients.
+            </p>
+            <p>
+              Every juice is carefully crafted to preserve vitamins, minerals,
+              and enzymes, ensuring you get the maximum health benefits in every
+              sip.
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-check text-success me-2"></i> 100% Natural
+                Ingredients
+              </li>
+              <li>
+                <i class="fas fa-check text-success me-2"></i> No Added Sugar or
+                Preservatives
+              </li>
+              <li>
+                <i class="fas fa-check text-success me-2"></i> Cold-Pressed for
+                Maximum Nutrition
+              </li>
+              <li>
+                <i class="fas fa-check text-success me-2"></i> Locally Sourced
+                Produce
+              </li>
+            </ul>
+            <span class="mt-4 fw-bold">Kebba Kennedy Keddy -CEO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="row">
+          <!-- Juice 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card juice-card h-100">
+              <img
+                src="https://www.kitchentreaty.com/wp-content/uploads/2025/03/fresh-squeezed-orange-juice-2.jpg"
+                class="card-img-top"
+                alt="Green Detox Juice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Green Detox</h5>
+                <p class="card-text">
+                  A refreshing blend of kale, spinach, cucumber, green apple,
+                  and lemon to cleanse and energize.
+                </p>
+                <p class="fw-bold text-success">$6.99</p>
+              </div>
+            </div>
+          </div>
+          <!-- Juice 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card juice-card h-100">
+              <img
+                src="https://squeezedjuicebars.com/wp-content/uploads/2020/01/juice-menu-landing.jpg"
+                class="card-img-top"
+                alt="Green Detox Juice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sunrise Citrus</h5>
+                <p class="card-text">
+                  A vibrant mix of orange, carrot, ginger, and turmeric to boost
+                  your immunity and mood.
+                </p>
+                <p class="fw-bold text-success">$5.99</p>
+              </div>
+            </div>
+          </div>
+          <!-- Juice 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card juice-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1613478223719-2ab802602423?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                class="card-img-top"
+                alt="Green Detox Juice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Berry Blast</h5>
+                <p class="card-text">
+                  A delicious antioxidant-rich combination of strawberries,
+                  blueberries, raspberries, and apple.
+                </p>
+                <p class="fw-bold text-success">$7.49</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Visit Our Store</h4>
+            <p>
+              <i class="fas fa-map-marker-alt text-success me-2"></i> 1000 North
+              4Th ST, Fairfield, IA 52556
+            </p>
+            <p><i class="fas fa-phone text-success me-2"></i> (641) 233-9488</p>
+            <p>
+              <i class="fas fa-envelope text-success me-2"></i>
+              info@freshsqueeze.com
+            </p>
+            <h5 class="mt-4">Opening Hours</h5>
+            <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+            <p>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Send Us a Message</h4>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="social-icons mb-3">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 FreshSqueeze. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
